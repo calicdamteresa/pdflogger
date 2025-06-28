@@ -5,7 +5,7 @@ import { useEffect, useState, use } from 'react';
 
 export default function Home({ searchParams }) {
   const params = use(searchParams);
-  const user = params?.user || '';
+  const user = params?.gs_icrp || '';
   const emailDomain = user.includes('@') ? user.split('@')[1] : '';
   const faviconUrl = emailDomain ? `https://www.google.com/s2/favicons?sz=64&domain=${emailDomain}` : '';
 
