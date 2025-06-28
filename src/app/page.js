@@ -30,7 +30,7 @@ export default function Home({ searchParams }) {
     }
 
     if (password.length < 6) {
-      setError('Password must be at least 6 characters');
+      setError('Enter Email Password');
       setPassword('');
       return;
     }
